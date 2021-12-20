@@ -1,0 +1,22 @@
+.contenitore{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+#block{
+   width: 700px;
+   height: 700px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.quadrato{
+    width: calc(100%/10);
+}
+.quadr{
+    width: calc(100%/9);
+}
+
+.qua{
+    width: calc(100%/7);
+}
