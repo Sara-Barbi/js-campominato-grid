@@ -27,6 +27,12 @@
     border: 3px solid rgb(17, 14, 59);
     background-color: lightcoral;
 }
-
-
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change{
+    background-color: brown;
+}
 
