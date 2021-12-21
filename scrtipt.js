@@ -34,6 +34,15 @@ go.addEventListener ("click", function(){
        console.log(valoreCella);
     }
     
+    //16 bombe in modo casuale con un math random. per non far uscire lo stesso num, ogni volta che estraggo una posiz, la metto in un array. e utilizzare l'if per eliminare gli elementi già presenti nell'array. 
+    let myArrCells = [];
+    while{
+        let position =  math.Floor(Math.random);
+        myArrCells.push(position);
+    }
+
+
+
 });
 
 
