@@ -24,10 +24,10 @@ go.addEventListener ("click", function(){
     let num = document.getElementsByClassName("num");       //richiamo l'elemento che esiste solo dentro alla funzione, dentro alla funzione.
     for(i=0; i<num.length; i++){                            //parte da 0 e abilita tutti i num perche faccio num.lenght
         num[i].addEventListener("click", cellaClick);       //inserisco una click,function a ciascun num, quindi scrivo num[i] (Ascoltatore di ogni elemento).
-                                                            //richiamo la funzione che ho ceato dopo per ciascun elemento.
-    }
-                                                            //potevo scrivere direttamente la function all'interno del for
-                                                        
+       }                                                    //richiamo la funzione che ho ceato dopo per ciascun elemento.
+    
+    //potevo scrivere direttamente la function all'interno del for                                                  
+    
     function cellaClick(){
        const valoreCella = parseInt(this.textContent);     //creo una variabile che mi restituisce il valore dell'elem. cliccato              
        this.classList.add("change");                       //aggiungo a quell'elem la classe change
