@@ -8,7 +8,6 @@ go.addEventListener ("click", function(){
     if(selezione=="easy"){  //se seleziono easy allora..
         for(let i=1; i<=100 ; i++){
             block.innerHTML += `<div class="quadrato num item-${i}">${i}</div>`;
-            
         }
         
     }else if(selezione=="medium"){
@@ -23,15 +22,20 @@ go.addEventListener ("click", function(){
     }   
     
     let num = document.getElementsByClassName("num");
+    for(i=0; i<num.length; i++){
+        num[i].addEventListener("click", function(){
+            
+            this.classList.add("change");
+        });
+    }
     
-    num.addEventListener("click", function(){
+
     
-        num.classList.add("change");
-    });
+    
     
   
 
-})
+});
 
 
 
