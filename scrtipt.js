@@ -21,20 +21,14 @@ go.addEventListener ("click", function(){
         }
     }   
     
-    let num = document.getElementsByClassName("num");
-    for(i=0; i<num.length; i++){
-        num[i].addEventListener("click", function(){
+    let num = document.getElementsByClassName("num");  //richiamo l'elemento che esiste solo dentro alla funzione, dentro alla funzione.
+    for(i=0; i<num.length; i++){                       //parte da 0 e abilita tutti i num perche faccio num.lenght
+        num[i].addEventListener("click", function(){   //inserisco una click,function a ciascun num, quindi scrivo num[i]
             
-            this.classList.add("change");
+            this.classList.add("change");              //con this evidenzio il num cliccato e gli aggiungo una classe vche voglio che spunti al click
         });
     }
     
-
-    
-    
-    
-  
-
 });
 
 
